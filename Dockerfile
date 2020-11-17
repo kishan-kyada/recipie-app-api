@@ -1,6 +1,6 @@
 FROM python:3.7-alpine
 
-MAINTAINER Restful apis
+# MAINTAINER Restful apis
 
 ENV PYTHONUNBUFFERED 1
 
