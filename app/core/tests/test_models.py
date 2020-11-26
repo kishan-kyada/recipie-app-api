@@ -36,3 +36,8 @@ class ModelTests(TestCase):
         """test the tag string representation"""
         tag = models.Tag.objects.create(user=sample_user(), name='Vegan')
         self.assertEqual(str(tag), tag.name)
+        
+    def test_ingredient_str(self):
+        """test the ingredient string representation"""
+        ingredient = models.Ingredient.objects.create(user=sample_user(), name="Cucumber")
+        self.assertAlmostEqual(str(ingredient), ingredient.name)
